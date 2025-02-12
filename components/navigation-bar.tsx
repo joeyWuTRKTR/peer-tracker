@@ -46,7 +46,7 @@ function getNavsByRoleType(roleType: RoleType) {
 }
 
 export function NavigationBar() {
-  const { user } = useUser()
+  const { user } = useUser();
   const router = useRouter();
   const [activeTab, setActiveTab] = useState<RoleType>("challenger");
   const [profileDialogOpen, setProfileDialogOpen] = useState(false)
